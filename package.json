@@ -1,0 +1,16 @@
+{
+  "name": "home_smart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./home_smart/output.css --watch",
+    "prettier": "npx prettier --write ./home_smart/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.3.0"
+  }
+}
