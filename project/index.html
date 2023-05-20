@@ -14,22 +14,111 @@
             <a class="focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-amber-400 lg:absolute lg:left-1/2 lg:top-9 z-50 hover:opacity-75 transition-opacity" href="#" aria-label="Go to homepage">
                 <img src="./img/logo.svg" width="200" alt="Home smart logo" class="w-48 md:w-64 lg:w-72">
             </a>
-            <button id="menu" class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors">
+            <button id="menu" class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors" aria-expanded="false" aria-label="Open Menu">
                 <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
                     className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round"
                         d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                 </svg>
             </button>
-            <div role="menubar" class="flex flex-col absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center gap-4 text-lg py-6 text-neutral-900 lg:hidden">
-
-                <a href="#">Home</a>
-                <a href="#">contact</a>
-                <a href="#">Login</a>
-                <a href="#">Signup</a>
+            <div role="menubar" class=" z-10 hidden flex-col absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center gap-4 text-lg py-6 dark:text-neutral-900 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between lg:w-full">
+                <a role="menuitem" class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-amber-400 hover:text-neutral-600 transition-colors" href="#">Home</a>
+                <a role="menuitem" class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-amber-400 hover:text-neutral-600 transition-colors lg:mr-auto" href="#">Contact</a>
+                <a role="menuitem" class="py-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-amber-400 hover:text-neutral-600 transition-colors" href="#">Login</a>
+                <a role="menuitem" class="py-2 px-6 focus:outline-none focus-visible:ring-4 shadow-xl hover:shadow-none transition-shadow ring-neutral-900 rounded-md ring-offset-amber-400 text-white bg-teal-800" href="#">Sign Up</a>
             </div>
         </div>
     </nav>
+    <header class="relative pt-16 md:pt-24 lg:48">
+        <div class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600">
+        </div >
+        <div class="container mx-auto grid grid-rows-1 place-items-end px-2">
+            <img class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto" src="./img/couch.png" alt="Couch">
+            <img class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-52 md:w-64 lg:w-72" src="./img/app.svg" alt="app">
+
+        </div>
+    </header>
+    <main class="grid gap-12 sm:gap-16 md:gap-24 lg:gap-32 px-8 overflow-hidden">
+
+        <a href="#" class="py-2 px-6 focus:outline-none focus-visible:ring-4 shadow-xl hover:shadow-none transition-shadow ring-offset-4 ring-neutral-900 rounded-md ring-offset-white dark:ring-offset-neutral-800 dark:ring-amber-400 bg-amber-400 mx-auto my-12 dark:text-neutral-900 flex gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            <span>Download the App</span>
+        </a>
+        <section aria-labelledby="qualities" class="relative">
+            <img class="hidden lg:block absolute top-1/2 -translate-y-1/2 -left-24 xl:-left-7" src="./img/dots.svg" alt="dots" aria-hidden="true">
+            <img class="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-24 xl:-right-7" src="./img/dots.svg" alt="dots" aria-hidden="true">
+            <h2 id="qualities" class="sr-only"> Our qualities</h2>
+            <div class="conatiner mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-center md:justify-between">
+                <div class="grid gap-4 justify-items-center text-center md:flex-1">
+                    <div class="rounded-full border-8 border-amber-400 p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-14 h-14">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold">Safe</h3>
+                    <p>Our products are secure and private out-of-the-box</p>
+                </div>
+                <div class="grid gap-4 justify-items-center text-center md:flex-1">
+                    <div class="rounded-full border-8 border-amber-400 p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-14 h-14">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold">Efficient</h3>
+                    <p>Feel good about your wallet and the environment</p>
+                </div>
+                <div class="grid gap-4 justify-items-center text-center md:flex-1">
+                    <div class="rounded-full border-8 border-amber-400 p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-14 h-14">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                    </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold">Proven</h3>
+                    <p>Leading the Smart Home world for 10 years</p>
+                </div>
+            </div>
+        </section>
+        <section aria-labelledby="partners" class="text-center grid gap-8 place-items-center">
+            <div class="grid gap-4">
+                <h3 id="partners" class="text-4xl font-bold text-amber-400">Our Partners</h3>
+                <p class="w-full `max-w-lg`">We’ve partnered with hundreds of smart home brands to help you create a smart home that fits your needs and doesn’t lock
+                you in.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 max-w-2xl mx-auto">
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner1.svg" alt="partner" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner2.svg" alt="partner" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner3.svg" alt="partner" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner4.svg" alt="partner" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner5.svg" alt="partner" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner6.svg" alt="partner" class="h-16 w-16">
+                </div>
+                <div class="p-4 bg-white dark:bg-neutral-600 shadow-md dark:shadow-xl rounded-md">
+                    <img src="./img/partner7.svg" alt="partner" class="h-16 w-16">
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
