@@ -9,7 +9,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>s
+      <a href="#getting-started">Getting Started</a>
     </li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -21,7 +21,7 @@
 
 ![](./img/homeSmart.png)
 
-## TWITTER/HOME-PAGE
+## HomeSmart
 
 This is the cloned version of Home Smart Project
 
