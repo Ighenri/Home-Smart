@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./project/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+       maxWidth: {
+        '16': '16rem',
+      }
+    },
   },
   plugins: [],
 }
